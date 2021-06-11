@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Tìm kiếm sản phẩm"
+        android:icon="@drawable/ic_search"
+        android:id="@+id/menuSearch"/>
+
+    <item android:title="Giỏ hàng"
+        android:id="@+id/menuCart"
+        android:icon="@drawable/ic_shopping" />
+    <item android:title="Cài đặt"
+        android:id="@+id/menuSetting"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_settings" />
+</menu>

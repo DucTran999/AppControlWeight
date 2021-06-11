@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/home_theme_background"
+    tools:context=".fragment.InfoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/shop_custom_color_background3"
+        android:gravity="center"
+        android:text="@string/c_t_nh_ch_s"
+        android:textStyle="bold"
+        android:textFontWeight="@android:integer/config_shortAnimTime"
+        android:textColor="#353333"
+        android:textSize="35sp"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Nhập chiều cao (m) "
+            />
+
+        <EditText
+            android:id="@+id/chieucaoEd"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin ="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Nhập cân nặng (kg)"
+            />
+        <EditText
+            android:id="@+id/cannangEd"
+            android:layout_marginLeft="10dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Nhập tuổi" />
+
+        <EditText
+            android:id="@+id/tuoiEd"
+            android:layout_marginLeft="15dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+        <RadioButton
+            android:id="@+id/NamRd"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="25sp"
+            android:text="Nam"
+            />
+        <RadioButton
+            android:id="@+id/NuRd"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="25sp"
+            android:text="Nữ"
+            android:layout_marginLeft="60dp"
+            />
+    </RadioGroup>
+    <Button
+        android:id="@+id/calBtn"
+        android:layout_marginTop="20dp"
+        android:layout_width="120dp"
+        android:layout_height="42dp"
+        android:text="Tính"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:background="@drawable/custom_btn"
+        />
+    <TextView
+        android:layout_marginTop="13dp"
+        android:layout_width="258dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_height="5dp"
+        android:background="@drawable/shop_custom_color_background3"/>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Chỉ số BMI: "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/bmiTv"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Trình trạng: "
+            />
+
+        <TextView
+            android:id="@+id/ttTv"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Calories cho 1 ngày: "
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/caloTv"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Proteins cho 1 ngày: "
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/proteinTv"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>

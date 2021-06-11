@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AppTinhCalo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="c_t_nh_ch_s">Ước tính chỉ số</string>
+    <string name="nam">Nam</string>
+    <string name="n">Nữ</string>
+    <string name="ch_s_bmi">Chỉ số BMI:</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

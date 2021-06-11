@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/home_theme_background"
+    tools:context=".SettingActivity">
+   <androidx.appcompat.widget.Toolbar
+      android:id="@+id/settingTb"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:background="@drawable/shop_custom_color_background"
+      android:gravity="center"
+      app:title="Thiết lập tài khoản">
+    </androidx.appcompat.widget.Toolbar>
+  <ImageView
+        android:layout_marginTop="30dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/login_avatar_icon"
+        android:layout_gravity="center"/>
+  <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên khách hàng: "
+        android:textSize="22dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/fullnameSettingTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:text="Anh Duc"/>
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_marginTop="5dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên tài khoản: "
+        android:textSize="22dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/usernameSettingTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:text="Anh Duc"/>
+  </LinearLayout>
+
+  <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email: "
+        android:textSize="22dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/emailSettingTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:text="Anh Duc"
+        />
+  </LinearLayout>
+
+  <Button
+      android:id="@+id/dmkBtn"
+      android:layout_gravity="center"
+      android:layout_marginTop="30dp"
+      android:layout_width="250dp"
+      android:layout_height="wrap_content"
+      android:textSize="25dp"
+      android:textColor="@color/white"
+      android:text="Đổi mật khẩu"
+      android:background="@drawable/custom_btn"/>
+  <Button
+      android:id="@+id/thoatSetting"
+      android:layout_gravity="center"
+      android:layout_marginTop="30dp"
+      android:layout_width="250dp"
+      android:layout_height="wrap_content"
+      android:textSize="25dp"
+      android:textColor="@color/white"
+      android:text="Thoát"
+      android:background="@drawable/custom_btn"/>
+  </LinearLayout>

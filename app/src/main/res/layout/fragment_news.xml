@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/home_theme_background"
+    tools:context=".fragment.InfoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/shop_custom_color_background3"
+        android:gravity="center"
+        android:text="Dinh dưỡng thực phẩm"
+        android:textStyle="bold"
+        android:textFontWeight="@android:integer/config_shortAnimTime"
+        android:textColor="#353333"
+        android:textSize="35sp"/>
+
+    <ViewFlipper
+        android:id="@+id/slideVf"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+    </ViewFlipper>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:text="Các loại thực phẩm phổ biến"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="23sp"
+            style="bold"
+            android:textColor="#CE56D6"/>
+
+        <ListView
+            android:id="@+id/newLv"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

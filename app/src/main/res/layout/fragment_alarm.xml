@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.InfoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/contentAlarmTv"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/shop_custom_color_background3"
+        android:gravity="center"
+        android:text="Đặt báo thức"
+        android:textStyle="bold"
+        android:textFontWeight="@android:integer/config_shortAnimTime"
+        android:textColor="#353333"
+        android:textSize="35sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/home_theme_background"
+        android:layout_below="@+id/contentAlarmTv">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_alarm"
+            android:layout_alignParentBottom="true"
+            android:padding="16dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="30dp"
+            app:backgroundTint="#DCB1E6"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    
+</RelativeLayout>

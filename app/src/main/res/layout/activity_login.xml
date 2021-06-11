@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_login"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="320dp"
+        android:layout_height="280dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/login_background" />
+
+    <EditText
+        android:id="@+id/username_login_Ed"
+        android:drawableLeft="@drawable/ic_person"
+        android:background="@drawable/custom_input_login"
+        android:layout_width="350dp"
+        android:drawablePadding="12dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:hint="Enter your username"
+        android:textSize="23dp"
+        />
+
+    <EditText
+        android:id="@+id/password_login_Ed"
+        android:drawableLeft="@drawable/ic_pass"
+        android:background="@drawable/custom_input_login"
+        android:layout_width="350dp"
+        android:hint="Enter your password"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:drawablePadding="12dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:inputType="textPassword"
+        android:textSize="23dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:text="Forgot password?"
+            android:textColor="#A63196"
+            />
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progress_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin = "10dp"
+        android:visibility="gone"
+        />
+    <Button
+        android:id="@+id/signinBtn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:textSize="27dp"
+        android:text="Sign In"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_btn"
+        />
+
+    <TextView
+        android:id="@+id/signupTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not registered? Sign Up now!"
+        android:layout_marginTop="30dp"
+        android:textStyle="italic"
+        android:layout_gravity="center"
+        android:textSize="18dp"
+        />
+
+</LinearLayout>

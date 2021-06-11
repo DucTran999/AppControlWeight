@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/anhgiohangIv"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="5dp"
+        android:adjustViewBounds="true"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        />
+    <TextView
+        android:id="@+id/tengiohangTv"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/anhgiohangIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:textColor="@color/black"
+        android:text="Tên sản phẩm trong giỏ"
+        />
+    <TextView
+        android:id="@+id/giagiohangTv"
+        android:layout_below="@+id/tengiohangTv"
+        android:layout_toRightOf="@+id/anhgiohangIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="giá tiền"
+        android:textSize="23sp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#AF31AD"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/giagiohangTv"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="5dp"
+        android:layout_toRightOf="@+id/anhgiohangIv">
+
+        <Button
+            android:id="@+id/giamBtn"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_button_giam"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="-"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/soluongBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/spinner_soluong"
+            android:focusable="false"
+            android:text="1"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/tangBtn"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/custom_bottom_tang"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="+"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

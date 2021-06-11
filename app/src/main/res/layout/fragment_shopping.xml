@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/wheyshopId"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.InfoFragment">
+
+<!--    thanh phan gom 1 tv, tablayout, view_pager-->
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/shopcontentId"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/shop_custom_color_background3"
+        android:gravity="center"
+        android:text="Whey Shop"
+        android:textStyle="bold"
+        android:textFontWeight="@android:integer/config_shortAnimTime"
+        android:textColor="#353333"
+        android:textSize="35sp" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/shopcontentId"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/shop_custom_color_background2"
+        app:tabIndicatorColor="#EC5E8E"
+        app:tabIndicatorHeight="2dp"
+        app:tabInlineLabel="true"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="#DA5E87"
+        app:tabTextColor="#9A9494" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_below="@+id/tab_layout"
+        android:id="@+id/order_viewpager"
+        android:layout_width="match_parent"
+        android:background="@drawable/shop_custom_color_background2"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

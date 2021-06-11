@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SearchSPActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/mapTb"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/shop_custom_color_background"
+        app:title="Địa chỉ cửa hàng">
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:background="@drawable/home_theme_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thông tin cửa hàng"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:layout_gravity="center">
+            <TextView
+                android:gravity="center"
+                android:padding="30dp"
+                android:drawableLeft="@drawable/ic_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Địa chỉ: Km số 10 - Đ. Nguyễn Trãi - Hà Đông - Hà Nội"
+                android:textSize="25sp"
+                android:textColor="#AA4198"/>
+        </LinearLayout>
+        <WebView
+            android:layout_margin="30dp"
+            android:padding="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

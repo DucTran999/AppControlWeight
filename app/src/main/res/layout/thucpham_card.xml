@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <ImageView
+            android:layout_margin="5dp"
+            android:id="@+id/thucphamIv"
+            android:layout_height="80dp"
+            android:layout_width="80dp"
+            android:src="@drawable/login_avatar_icon"/>
+
+        <TextView
+            android:layout_margin="10dp"
+            android:id="@+id/tenthucphamTv"
+            android:layout_toRightOf="@+id/thucphamIv"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text='Tên thực phẩm'
+            android:textSize="23sp"
+            />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/proteinTv"
+                android:layout_below="@+id/tenthucphamTv"
+                android:layout_toRightOf="@+id/thucphamIv"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Protein"
+                android:textSize="22sp"
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="45dp"
+                android:id="@+id/caloriesTv"
+                android:layout_below="@+id/tenthucphamTv"
+                android:layout_toRightOf="@+id/proteinTv"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Calo"
+                android:textSize="22sp"
+                />
+
+</RelativeLayout>
